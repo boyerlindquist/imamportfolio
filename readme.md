@@ -1,6 +1,6 @@
-# My Web Portfolio  
+# Welcome to My Web Portfolio  
 
-Welcome to my **personal web portfolio**! This project showcases my skills, projects, and experiences in **data engineering**.
+This project serves as a **summary of my skills, experiences, and projects** in an interactive web format.
 
 ## 📌 Features
 - **Profile Section**
