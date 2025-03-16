@@ -525,7 +525,7 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width: 600px){
     #header{
-        height: 60vh;
+        height: 70vh;
 
     }
     nav {
@@ -596,8 +596,11 @@ nav ul li a:hover::after{
     .hero-left{
         flex:1;
         max-width: 50%;
-        padding-left: 100px;
+        padding-left: 50px;
         padding-top: 150px;
+    }
+    .hero-right{
+        display: none;
     }
 
     /* icon styles */
