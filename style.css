@@ -525,7 +525,7 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width: 600px){
     #header{
-        height: 70vh;
+        height: 100vh;
 
     }
     nav {
@@ -699,9 +699,15 @@ nav ul li a:hover::after{
     }
 
     /* project  */
+    .project-list div {
+        min-width:65%; /* Makes the boxes smaller */
+        min-height: auto; /* Adjust height dynamically */
+        padding: 20px; /* Reduce padding for better spacing */
+        margin-right: 10px; /* Reduce margin */
+    }
 
-    .project-list{
-        width: 150%;
+    .project-list img {
+        height: auto; /* Prevents distortion */
     }
 
     /* contact */
