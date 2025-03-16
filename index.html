@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <nav>
+            <div class="logo-container">
+                <h1 class="logo">Imam's Portfolio</h1>
+                <div class="logo2"></div>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-left">
+                <h3>Hello, I'm</h3>
+                <h2>Imam Qalbun Salim</h2>
+                <h4>Data Engineer</h4>
+                <p>Welcome to my web portfolio!</p>
+                <a href="assets/CV/CV.pdf" download="CV.pdf" target="_blank">
+                    <button>Check Out My Resume</button>
+                </a>
+                <div class="hero-icons">
+                    <a href="https://github.com/boyerlindquist" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/imamqalbuns/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:imammamq@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="assets/imam2.png" alt="My Photo">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------- about ------------------------>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-left">
+                <img src="assets/work1.jpeg" alt="Work 1">
+            </div>
+            <div class="about-right">
+                <h3>About Me</h3>
+                <p>I am a Junior Data Engineer passionate about designing and optimizing data pipelines.
+                    I have hands-on experience building reliable ETL workflows using Python, Pentaho Data Integration,
+                    and Apache Airflow. Proficient in SQL and database management, I bring a strong analytical mindset
+                    and interdisciplinary expertise gained through coursework and real-world projects. My approach to
+                    data engineering focuses on efficiency, scalability,
+                    and delivering impactful solutions.</p>
+                <div class="tab">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education / Courses</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br> Python (PySpark, Pandas), SQL (MySQL, Microsoft SQL Server, PostgreSQL), Shell Scripting</li>
+                        <li><span>Tools</span><br> AWS (Glue, S3, Athena), Pentaho DI, Airflow, Kafka, Git, Jupyter Notebook/Lab, RDBMS, Tableau, Spreadsheet</li>
+                        <li><span>Languages</span><br> Bahasa Indonesia (Native), English.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jr. Data Engineer - Xeratic</span><br>Nov, 2023 - Jun, 2024</li>
+                        <li><span>Data Science Virtual Internship Experience - Kalbe Nutritionals X Rakamin</span><br>Aug, 2023 - Sep, 2023</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>IPB University - Physics</span><br> Aug, 2019 - Mar, 2025</li>
+                        <li><span>DQLab - Data Analytics Scholarship Awardee</span><br>Apr, 2023 - Jun, 2023</li>
+                        <li><span>Digitalent by Kominfo -  Programming with Python for Data Science</span><br>Mar, 2023 - Jun, 2023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------- projects ---------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Personal Projects</h1>
+        <div class="project-container">
+            <button id="prevBtn">&#10094;</button>
+            <div class="project-list">
+                <div>
+                    <img src="assets/AWS-infra.jpeg" alt="aws">
+                    <h2>AWS Data Pipeline</h2>
+                    <p>
+                        Showcases an ETL (Extract, Transform, Load) pipeline using Apache Airflow
+                        and AWS services (S3, Glue, Athena) to process employee data. The pipeline
+                        generates fake employee records, uploads them to AWS S3, runs an ETL job
+                        using AWS Glue, and queries the transformed data using AWS Athena.
+                    </p>
+                    <a href="https://github.com/boyerlindquist/AWS-ETL-pipeline"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+                <div>
+                    <img src="assets/webserver-etl.png" alt="webserver">
+                    <h2>ETL to PostgreSQL with Airflow</h2>
+                    <p>
+                        Showcases an ETL (Extract, Transform, Load) pipeline using Apache
+                        Airflow. The pipeline processes web server log data, extracts relevant
+                        information, transforms the data, and loads it into a PostgreSQL
+                        database. This project aims to showcase how to orchestrate and
+                        automate data workflows using Airflow.
+                    </p>
+                    <a href="https://github.com/boyerlindquist/webserver-log-pipeline"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+                <div>
+                    <img src="assets/shell-dag.png" alt="webserver">
+                    <h2>ETL with Shell Scripting and Apache Airflow</h2>
+                    <p>
+                        Showcases an ETL (Extract, Transform, Load) pipeline built using
+                        Apache Airflow and shell scripting to process toll data from various
+                        file formats. The pipeline extracts data from multiple sources,
+                        consolidates it into a single structured file, and transforms the
+                        data for uniformity.
+                    </p>
+                    <a href="https://github.com/boyerlindquist/ETL-toll-pipeline"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+                <div>
+                    <img src="assets/virtual-intern.png" alt="rakamin">
+                    <h2>Data Science Final Project Kalbe Nutriotionals X Rakamin</h2>
+                    <p>
+                        Conducted Exploratory Data Analysis using PostgreSQL, developed
+                        an interactive Tableau dashboard, and performed predictive
+                        modeling, including customer segmentation with K-Means clustering
+                        and time series forecasting using ARIMA.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1BGQR9zy-Xo-_zyOL37CFoN_2kbOjlAHK/view?usp=sharing"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+                <div>
+                    <img src="assets/ecommerce.png" alt="ecommerce">
+                    <h2>Olist E-Commerce Data Analysis</h2>
+                    <p>
+                        Analyzes Olist's e-commerce data using Python, MySQL, and Streamlit.
+                        Tasks include data importing, cleaning, joining, and exploratory
+                        analysis to reveal trends in customer behavior, top products,
+                        and payment preferences.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1ZyilELfi5l8QhGhuIfPhN3gN927JMBrR/view?usp=sharing"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+                <div>
+                    <img src="assets/movie.png" alt="movie">
+                    <h2>Movie Data Analysis with Python</h2>
+                    <p>
+                        Showcases a movie data analysis project using Python. The project involves
+                        importing, cleaning (handling missing values, duplicates, and data types),
+                        and analyzing data. It highlights trends in movie genres, box office revenues,
+                        ratings, and audience preferences.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1nF-F_3q84lZcDnwn2Wa_iYE00RYB3cgg/view?usp=sharing"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+                <div>
+                    <img src="assets/nyambi.png" alt="nyambi">
+                    <h2>NyambiDesign Dashboard</h2>
+                    <p>
+                        Showcases an analytics dashboard for Nyambi Design's August performance
+                        using Tableau. The project involves integrating and visualizing key
+                        metrics such as revenue, user engagement, and sales performance, highlighting
+                        trends in business growth, customer behavior, and operational
+                        efficiency
+                    </p>
+                    <a href="https://drive.google.com/file/d/1YjnWNvlewU5phrhWvbnxsjLWdWhAx39f/view?usp=sharing"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+                <div>
+                    <img src="assets/crime.png" alt="crime">
+                    <h2>Chicago Crime Analysis</h2>
+                    <p>
+                        Showcases a Chicago crime analysis project using Python. The project
+                        involves importing, cleaning (renaming columns, handling data types,
+                        and feature labeling), and analyzing data. It highlights trends in crime
+                        rates, geographic hotspots, and variations across time periods
+                    </p>
+                    <a href="https://drive.google.com/file/d/1jYRDOlxXAYWWa-ZQaUVcZosgfDvFYqcG/view?usp=sharing"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                </div>
+            </div>
+            <button id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<!------------ certificates ------------>
+
+<div id="certificates">
+    <div class="cert-container">
+        <h1>Certificates</h1>
+        <p>Credentials That Define My Journey</p>
+        <div class="cert-list">
+            <div>
+                <img src="assets/cert (2).jpeg" alt="airflow-kafka">
+                <h3>ETL and Data Pipelines with Shell, Airflow, and Kafka</h3>
+                <p><a href="https://www.coursera.org/account/accomplishments/verify/SPC4ESOK3DOU" target="_blank">
+                    Credential: SPC4ESOK3DOU</a></p>
+            </div>
+            <div>
+                <img src="assets/cert (1).jpeg" alt="sql-python">
+                <h3>Databases and SQL for Data Science with Python</h3>
+                <p><a href="https://www.coursera.org/account/accomplishments/records/Y3TYXM8NQ3H6" target="_blank">
+                    Credential: Y3TYXM8NQ3H6</a></p>
+            </div>
+            <div>
+                <img src="assets/cert (5).jpeg" alt="data-python">
+                <h3>Data Analysis with Python</h3>
+                <p><a href="https://www.coursera.org/account/accomplishments/verify/WR7BVVLXB2QV" target="_blank">
+                    Credential: WR7BVVLXB2QV</a></p>
+            </div>
+            <div>
+                <img src="assets/cert (3).jpeg" alt="intro-data">
+                <h3>Introduction to Data Analytics</h3>
+                <p><a href="https://www.coursera.org/account/accomplishments/verify/YHWPRGJCSXAB" target="_blank">
+                    Credential: YHWPRGJCSXAB</a></p>
+            </div>
+            <div>
+                <img src="assets/cert-Tetris.png" alt="tetris">
+                <h3>Tetris Program Batch 3: Data Analytics Scholarship Awardee</h3>
+                <p><a href="https://academy.dqlab.id/Certificate_check/result/DQLABTSB3IOKWMG/TRACK#mycertificate" target="_blank">
+                    Credential: DQLABTSB3IOKWMG</a></p>
+            </div>
+            <div>
+                <img src="assets/cert-TSA.png" alt="tsa">
+                <h3>Programming with Python for Data Science</h3>
+                <p><a href="https://drive.google.com/file/d/1uJzGb44FF-nc8IVbo7zrHLpHymybrc1_/view" target="_blank">
+                    Credential: 2005825840-22/TSA/BLSDM.Kominfo/2023</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------- contact ------------------- -->
+
+<div id="contact">
+    <div class="contact-container">
+        <!-- Left Side -->
+        <div class="contact-left">
+            <h2>Contact Me</h2>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>imammamqs@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <p>linkedin.com/in/imamqalbuns</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <p>github.com/boyerlindquist</p>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="contact-right">
+            <form action="mailto:imammamq.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ----- footer -----  -->
+
+
+<!-- ------- javascript -------  -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    // scroll button
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let projectList = document.querySelector(".project-list");
+        let prevBtn = document.getElementById("prevBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        let scrollAmount = 700; // Adjust as needed
+        let scrollSpeed = 20;  // higher = slower
+
+        function smoothScroll(distance) {
+            let step = distance / scrollSpeed; // Smaller steps = smoother scroll
+            let count = 0;
+
+            let slide = setInterval(() => {
+                projectList.scrollBy({ left: step, behavior: "instant" });
+                count++;
+                if (count >= scrollSpeed) clearInterval(slide);
+            }, 10); // Adjust interval timing if needed
+        }
+
+        nextBtn.addEventListener("click", function () {
+            smoothScroll(scrollAmount);
+        });
+
+        prevBtn.addEventListener("click", function () {
+            smoothScroll(-scrollAmount);
+        });
+    });
+
+    // hamburger menu
+    function toggleMenu() {
+    var menu = document.querySelector(".nav-links");
+    menu.classList.toggle("active");
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,719 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #1a1a1a;
+    color: rgb(0, 28, 28);
+}
+#header{
+    width: 100%;
+    height: 90vh;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 1), rgba(26, 26, 26, 0)); /* Fully visible at the top, transparent at the bottom */
+    padding: 10px 100px; /* Adjust padding if necessary */
+    z-index: 1000; /* Ensure navbar is above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav-links {
+    display: flex; /* Show navbar in row layout */
+    gap: 20px;
+}
+.nav-links li {
+    list-style: none;
+}
+/* Hamburger Menu Button (Hidden on Desktop) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+.logo-container{
+    display: flex;
+    align-items: flex-end;
+    gap: 57px; /* Controls spacing between logo and dot */
+}
+.logo{
+    width: 140px;
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 100px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.logo2{
+    width: 10px; /* Size of the circle */
+    height: 10px;
+    background-color: #9bda0b; /* White color */
+    border-radius: 50%; /* Makes it a perfect circle */
+    margin-bottom:4px ;
+}
+nav ul{
+    padding-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 100%;
+    height: 2px;
+    width: 0;
+    background: #9bda0b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*hero*/
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.hero-left{
+    flex:1;
+    max-width: 50%;
+    padding-left: 200px;
+    padding-top: 150px;
+}
+
+/* icon styles */
+.fa-brands.fa-linkedin{
+    font-size: 28px;
+    color: #9bda0b;
+    display: flex;
+    margin: 15px auto 0 10px;
+}
+.fab.fa-github{
+    font-size: 28px;
+    color: #9bda0b;
+    display: flex;
+    margin: 15px auto 0 10px;
+}
+.fa-solid.fa-envelope{
+    font-size: 28px;
+    color: #9bda0b;
+    display: flex;
+    margin: 15px auto 0 10px;
+}
+.hero-icons{
+    display: flex;
+}
+.hero-icons a{
+    text-decoration: none;
+}
+/* ---------- */
+.hero-left h4{
+    font-size: 28px;
+    color: #ffffff;
+
+}
+
+.hero-left h3{
+    font-size: 28px;
+    color: #9bda0b;
+}
+
+.hero-left h2{
+    font-size: 38px;
+    color:#ffffff;
+}
+
+.hero-left button {
+    background-color: #9bda0b; /* Vibrant color */
+    color: #1a1a1a; /* Text color */
+    border: none; /* Remove default border */
+    margin-top: 15px;
+    padding: 12px 24px; /* More space inside the button */
+    font-size: 16px; /* Make text larger */
+    font-weight: bold; /* Make text bold */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: all 0.3s ease; /* Smooth hover effect */
+
+}
+
+.hero-left button:hover {
+    background-color: #6d9807; /* Slightly darker green */
+    color: white; /* Change text color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.hero-left p{
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.hero-right{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.hero-right img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    opacity: 70%;
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+
+.hero-right img:hover{
+    width: 380px;
+    border-radius: 10px;
+    padding-top: 30px;
+    opacity: 100%;
+}
+
+
+
+/* ---- about section ---- */
+
+#about{
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-left{
+    width: 30%;
+}
+
+.about-left img{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    border-radius: 20px;
+}
+
+.about-right{
+    width: 70%;
+}
+
+.about-right h3{
+    font-size: 38px;
+    color: #9bda0b;
+}
+
+.about-right p{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.tab{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+    position:relative;
+}
+
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:#9bda0b ;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 75%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+    font-size: 14px;
+}
+
+.tab-contents ul li span{
+    color: #9bda0b;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.tab-contents{
+    display:none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ----- projects ----- */
+
+#projects{
+    padding:  30px 0;
+}
+.project-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.project-list{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list::-webkit-scrollbar{
+    display: none;
+}
+.project-list img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.sub-title{
+    color: #9bda0b;
+}
+.project-list div h2{
+    color: #9bda0b;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.project-list div p{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    transition: 0.5s;
+}
+.project-list div{
+    background-color: #262626;
+    min-width: 500px; /* Increase from 350px to 400px */
+    min-height: 400px; /* Set a fixed height */
+    margin-right: 20px;
+    padding: 50px; /* Increase padding for better spacing */
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.project-list div a{
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    transition: 0.5s;
+    text-align: right;
+    text-align: bottom;
+    text-decoration: none;
+}
+.project-list div:hover a{
+    /* font-size: 16px; */
+    color: #9bda0b;
+}
+.project-list div:hover{
+    background-color: #343434;
+
+}
+
+/* Buttons */
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#prevBtn { left: 0; }
+#nextBtn { right: 0; }
+
+/* Certificates */
+
+#certificates{
+    background-color: #262626;
+    padding:  30px 0;
+    margin-top: 70px;
+}
+.cert-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center inline text */
+    color: #9bda0b;
+    position: relative;
+    padding-top: 30px;
+}
+.cert-container p{
+    color: #ffffff;
+}
+.cert-list {
+    display: grid;
+    justify-content: center; /* Center horizontally */
+    gap: 40px;
+    margin-top: 50px;
+    grid-template-columns: repeat(3, minmax(350px, 1fr)); /* Ensure columns expand */
+    width: 100%;
+}
+.cert-list h3{
+    margin-top: 10px;
+}
+.cert-list p{
+    margin-top: 5px;
+    text-decoration: none;
+}
+.cert-list a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* .cert-list img{
+    position: f;
+} */
+.cert-list div{
+    background-color: #1a1a1a;
+    width: 100%; /* Make it fill the grid column */
+    height: 400px; /* Increase height */
+    padding: 40px;
+    border-radius: 20px;
+    display: flex; /* Ensures content is centered */
+    flex-direction: column; /* Stack text inside */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Align text */
+}
+
+.cert-list div img {
+    width: 100%; /* Stretch image to full width of the box */
+    height: 100%; /* Stretch image to full height of the box */
+    object-fit: cover; /* Crop image to fill the box without distortion */
+    border-radius: 10px; /* Optional: keeps rounded edges */
+}
+
+/* ----- contact -----  */
+#contact {
+    padding: 40px 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Left takes 1 part, Right takes 2 parts */
+    gap: 30px;
+    max-width: 600px;
+    margin: auto;
+    align-items: start;
+}
+
+/* Contact left styling */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 15px;
+}
+.contact-left p,
+.contact-left h2{
+    color: #ffffff;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+.contact-item i {
+    font-size: 18px;
+    color: #9bda0b; /* Icon color */
+}
+
+/* Contact right styling */
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-right input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-right textarea {
+    width: 100%; /* Make it full width */
+    height: 120px; /* Adjust height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    margin-bottom: 10px;
+}
+.contact-right button{
+    background-color: #9bda0b;
+    color: #1a1a1a;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+/* --------------- css for small screen --------------- */
+
+@media only screen and (max-width: 600px){
+    #header{
+        height: 60vh;
+
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 600px;
+        width: 100%;
+        /* background-color: #1a1a1a;  */
+        background: linear-gradient(to bottom, rgba(26, 26, 26, 1), rgba(26, 26, 26, 0)); /* Fully visible at the top, transparent at the bottom */
+        padding: 10px 20px; /* Adjust padding if necessary */
+        z-index: 1000; /* Ensure navbar is above other elements */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .menu-toggle {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column;
+        background: #1a1a1a;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when menu is active */
+    }
+    .logo-container{
+        display: flex;
+        align-items: flex-end;
+        gap: 7px; /* Controls spacing between logo and dot */
+    }
+    .logo{
+        width: 140px;
+        font-size: 20px;
+        color: #ffffff;
+        padding-left: 00px;
+        padding-top: 30px;
+        font-weight: bold;
+        padding-right: 0px;
+        display: inline-block;
+        width: auto;
+    }
+    .logo2{
+        width: 10px; /* Size of the circle */
+        height: 10px;
+        background-color: #9bda0b; /* White color */
+        border-radius: 50%; /* Makes it a perfect circle */
+        margin-bottom:4px ;
+    }
+
+    /*hero*/
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    .hero-left{
+        flex:1;
+        max-width: 50%;
+        padding-left: 100px;
+        padding-top: 150px;
+    }
+
+    /* icon styles */
+    .fa-brands.fa-linkedin{
+        font-size: 28px;
+        color: #9bda0b;
+        display: flex;
+        margin: 15px auto 0 10px;
+    }
+    .fab.fa-github{
+        font-size: 28px;
+        color: #9bda0b;
+        display: flex;
+        margin: 15px auto 0 10px;
+    }
+    .fa-solid.fa-envelope{
+        font-size: 28px;
+        color: #9bda0b;
+        display: flex;
+        margin: 15px auto 0 10px;
+    }
+    .hero-icons{
+        display: flex;
+    }
+    .hero-icons a{
+        text-decoration: none;
+    }
+    /* ---------- */
+    .hero-left h4{
+        font-size: 28px;
+        color: #ffffff;
+
+    }
+
+    .hero-left h3{
+        font-size: 28px;
+        color: #9bda0b;
+    }
+
+    .hero-left h2{
+        font-size: 38px;
+        color:#ffffff;
+    }
+
+    .hero-left button {
+        background-color: #9bda0b; /* Vibrant color */
+        color: #1a1a1a; /* Text color */
+        border: none; /* Remove default border */
+        margin-top: 15px;
+        padding: 12px 24px; /* More space inside the button */
+        font-size: 16px; /* Make text larger */
+        font-weight: bold; /* Make text bold */
+        border-radius: 8px; /* Rounded corners */
+        cursor: pointer; /* Change cursor to pointer */
+        transition: all 0.3s ease; /* Smooth hover effect */
+
+    }
+
+    .hero-left button:hover {
+        background-color: #6d9807; /* Slightly darker green */
+        color: white; /* Change text color */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+
+    .hero-left p{
+        font-size: 18px;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+/* 
+    .hero-right{
+        display: block;
+        justify-content: center;
+        padding-right: 100px;
+        height: auto;
+        object-fit: contain;
+        width: 100%;
+        max-width: 350px;
+    } */
+    .about-right{
+        width: 600px;
+    }
+    .hero-right img{
+        max-width: 100%;
+        border-radius: 10px;
+        padding-top: 30px;
+        opacity: 70%;
+    }
+
+    /* about  */
+    .about-left{
+        display: none;
+    }
+    .about-left img{
+        display: none;
+    }
+
+    /* project  */
+
+    .project-list{
+        width: 150%;
+    }
+
+    /* contact */
+
+    .contact-left{
+        padding-left: 20px;
+    }
+    .contact-right{
+        padding-right: 20px;
+    }
+    .cert-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
