@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imam Qalbun Salim — Data Engineer Portfolio</title>
+    <title>Imam Qalbun Salim — Data Engineer</title>
     <meta name="description"
         content="Portfolio of Imam Qalbun Salim, Data Engineer specializing in ETL pipelines, Django REST APIs, cloud infrastructure, and data platforms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -19,416 +22,522 @@
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
 
-    <!-- ── HEADER / HERO ── -->
-    <div id="header">
-        <div id="container">
-            <nav>
-                <div class="logo-container">
-                    <a href="#header" class="logo-link">
-                        <h1 class="logo">Imam Qalbun Salim<span class="logo-dot"></span></h1>
-                        <span class="logo-sub">Data Engineer</span>
-                    </a>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-                <ul class="nav-links">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hero">
-                <div class="hero-left reveal">
-                    <h3>Hello, I'm</h3>
-                    <h2>Imam Qalbun Salim</h2>
-                    <h4>Data Engineer</h4>
-                    <p>Welcome to my web portfolio!</p>
-                    <a href="assets/CV/CV.pdf" download="CV.pdf" target="_blank">
-                        <button>Check Out My Resume</button>
-                    </a>
-                    <div class="hero-icons">
-                        <a href="https://github.com/boyerlindquist" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/imamqalbuns/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:imammamq@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-right reveal">
-                    <img src="assets/imam2.png" alt="My Photo">
-                </div>
-            </div>
+    <!-- ── NAV ── -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="logo-link">
+                <span class="logo">Imam Qalbun Salim<span class="logo-dot"></span></span>
+                <span class="logo-sub">Data Engineer</span>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
-    <!-- ── ABOUT ── -->
-    <div id="about">
+    <!-- ── HERO ── -->
+    <section id="hero" class="section hero-section">
         <div class="container">
-            <div class="row">
-                <div class="about-left reveal">
-                    <img src="assets/work1.jpeg" alt="Work 1">
-                </div>
-                <div class="about-right reveal">
-                    <h3>About Me</h3>
-                    <p>I am a Data Engineer passionate about designing and optimizing data pipelines and
-                        full-stack data platforms. I build end-to-end ETL workflows, relational data models, and
-                        REST APIs that power production dashboards. With hands-on experience in Python, SQL,
-                        cloud infrastructure (GCP, AWS), and tools like Airflow and Django, my approach to
-                        data engineering focuses on efficiency, scalability, and cost-effective solutions.</p>
-
-                    <div class="tab">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education / Courses</p>
-                    </div>
-
-                    <!-- Skills Tab -->
-                    <div class="tab-contents active-tab" id="skills">
-                        <div class="skills-grid">
-                            <div class="skill-row">
-                                <span class="skill-label">Languages</span>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">PySpark</span>
-                                    <span class="skill-tag">Pandas</span>
-                                    <span class="skill-tag">SQL</span>
-                                    <span class="skill-tag">BigQuery</span>
-                                    <span class="skill-tag">PostgreSQL</span>
-                                    <span class="skill-tag">MySQL</span>
-                                    <span class="skill-tag">Shell Scripting</span>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span class="skill-label">Frameworks & APIs</span>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Django REST Framework</span>
-                                    <span class="skill-tag">Flask</span>
-                                    <span class="skill-tag">Apache Airflow</span>
-                                    <span class="skill-tag">Apache Kafka</span>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span class="skill-label">Cloud & Infra</span>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">GCP</span>
-                                    <span class="skill-tag">BigQuery</span>
-                                    <span class="skill-tag">Compute Engine</span>
-                                    <span class="skill-tag">AWS S3</span>
-                                    <span class="skill-tag">AWS Glue</span>
-                                    <span class="skill-tag">AWS Athena</span>
-                                    <span class="skill-tag">Linux / Ubuntu</span>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span class="skill-label">Tools</span>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Pentaho DI</span>
-                                    <span class="skill-tag">Git</span>
-                                    <span class="skill-tag">Jupyter</span>
-                                    <span class="skill-tag">Tableau</span>
-                                    <span class="skill-tag">Spreadsheet</span>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span class="skill-label">Languages</span>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Bahasa Indonesia (Native)</span>
-                                    <span class="skill-tag">English</span>
-                                </div>
-                            </div>
+            <div class="hero-grid">
+                <div class="hero-text reveal">
+                    <p class="hero-eyebrow">👋 Hello, I'm</p>
+                    <h1 class="hero-name">Imam Qalbun<br>Salim</h1>
+                    <h2 class="hero-role">Data Engineer<span class="cursor-blink">|</span></h2>
+                    <p class="hero-bio">Building robust ETL pipelines, scalable data platforms, and REST APIs that power
+                        real production dashboards.</p>
+                    <div class="hero-actions">
+                        <a href="assets/CV/CV.pdf" download="CV.pdf" target="_blank" class="btn-primary">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <div class="hero-socials">
+                            <a href="https://github.com/boyerlindquist" target="_blank" class="social-link"
+                                title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/imamqalbuns/" target="_blank" class="social-link"
+                                title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:imammamq@gmail.com" class="social-link" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Experience Tab -->
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li>
-                                <span>Data Engineer — Jet Commerce</span>
-                                <span class="exp-date">Apr 2025 – Present &nbsp;·&nbsp; Jakarta, Indonesia</span>
-                                <ul class="exp-bullets">
-                                    <li>Built and automated end-to-end ETL pipelines (API scraping →
-                                        cleaning/transformation → PostgreSQL) for daily ecommerce reporting.</li>
-                                    <li>Designed relational data models and Django REST APIs powering a full-stack
-                                        dashboard that replaced Looker.</li>
-                                    <li>Standardized cross-brand reporting metrics and automated stakeholder data
-                                        delivery; built a 40+ query reusable SQL library.</li>
-                                    <li>Cut GCP cloud OPEX by &gt;40% via BigQuery-to-PostgreSQL migration,
-                                        Windows-to-Ubuntu server transition, and scheduled query optimization.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>Jr. Data Engineer — Xeratic</span>
-                                <span class="exp-date">Nov 2023 – Jun 2024 &nbsp;·&nbsp; Remote, Indonesia</span>
-                                <ul class="exp-bullets">
-                                    <li>Managed end-to-end data pipelines, including ETL processes, data warehousing,
-                                        and automation to optimize data flow and integration.</li>
-                                    <li>Developed interactive dashboards and reports using Tableau, transforming raw
-                                        data into actionable insights.</li>
-                                    <li>Monitored and maintained databases, enforcing data governance, integrity, and
-                                        compliance standards.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>Data Science Virtual Internship — Kalbe Nutritionals × Rakamin</span>
-                                <span class="exp-date">Aug 2023 – Sep 2023</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Education Tab -->
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>IPB University — Physics</span>Aug 2019 – Mar 2025</li>
-                            <li><span>DQLab — Data Analytics Scholarship Awardee</span>Apr 2023 – Jun 2023</li>
-                            <li><span>Digitalent by Kominfo — Programming with Python for Data Science</span>Mar 2023 –
-                                Jun 2023</li>
-                        </ul>
+                </div>
+                <div class="hero-image reveal">
+                    <div class="hero-img-wrapper">
+                        <img src="assets/imam2.png" alt="Imam Qalbun Salim">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <p class="section-eyebrow">About Me</p>
+                    <h2 class="section-heading">Turning Raw Data<br>Into <span class="accent">Impact</span></h2>
+                    <p class="about-bio">I'm a Data Engineer passionate about designing and optimizing data pipelines
+                        and full-stack data platforms. I build end-to-end ETL workflows, relational data models, and
+                        REST APIs that power production dashboards — focusing on efficiency, scalability, and
+                        cost-effective cloud solutions.</p>
+                    <p class="about-bio mt">Currently at <strong class="accent">Jet Commerce</strong>, where I've cut
+                        cloud OPEX by 40%+ and built a full-stack internal dashboard that replaced Looker entirely.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-num-wrap"><span class="stat-num">2</span><span class="stat-suf">+</span></div>
+                        <span class="stat-label">Years in Data Engineering</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num-wrap"><span class="stat-num">10</span><span class="stat-suf">+</span></div>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-card accent-card">
+                        <div class="stat-num-wrap"><span class="stat-num">40</span><span class="stat-suf">%</span></div>
+                        <span class="stat-label">Cloud OPEX Reduction</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num-wrap"><span class="stat-num">40</span><span class="stat-suf">+</span></div>
+                        <span class="stat-label">Reusable SQL Queries Built</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">What I Work With</p>
+                <h2 class="section-heading">Technical Skills</h2>
+            </div>
+            <div class="skills-categories reveal">
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Data &amp; Languages</h3>
+                    <div class="skill-icon-grid">
+                        <div class="skill-icon-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-bolt"></i><span>PySpark</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-database"></i><span>PostgreSQL</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-cloud"></i><span>BigQuery</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-terminal"></i><span>Shell Script</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Frameworks &amp; APIs</h3>
+                    <div class="skill-icon-grid">
+                        <div class="skill-icon-card"><i class="fa-solid fa-code"></i><span>Django REST</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-flask"></i><span>Flask</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-diagram-project"></i><span>Airflow</span>
+                        </div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-network-wired"></i><span>Kafka</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Cloud &amp; Infrastructure</h3>
+                    <div class="skill-icon-grid">
+                        <div class="skill-icon-card"><i class="fa-brands fa-google"></i><span>GCP</span></div>
+                        <div class="skill-icon-card"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
+                        <div class="skill-icon-card"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Tools</h3>
+                    <div class="skill-icon-grid">
+                        <div class="skill-icon-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-chart-bar"></i><span>Tableau</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-book-open"></i><span>Jupyter</span></div>
+                        <div class="skill-icon-card"><i class="fa-solid fa-gears"></i><span>Pentaho DI</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience" class="section exp-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">Work History</p>
+                <h2 class="section-heading">Experience</h2>
+            </div>
+
+            <div class="timeline reveal">
+                <!-- Jet Commerce -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-role">Data Engineer</h3>
+                                <p class="timeline-company">Jet Commerce</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Apr 2025 –
+                                    Present</span>
+                                <span class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Jakarta,
+                                    Indonesia</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Built and automated end-to-end ETL pipelines (API scraping → cleaning/transformation →
+                                PostgreSQL) for daily ecommerce reporting.</li>
+                            <li>Designed relational data models and Django REST APIs powering a full-stack dashboard
+                                that replaced Looker.</li>
+                            <li>Standardized cross-brand reporting metrics and automated stakeholder data delivery;
+                                built a 40+ query reusable SQL library.</li>
+                            <li>Cut GCP cloud OPEX by &gt;40% via BigQuery-to-PostgreSQL migration, Windows-to-Ubuntu
+                                server transition, and scheduled query optimization.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span><span>Django
+                                REST</span><span>PostgreSQL</span><span>GCP</span><span>BigQuery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Xeratic -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-role">Jr. Data Engineer</h3>
+                                <p class="timeline-company">Xeratic</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Nov 2023 – Jun
+                                    2024</span>
+                                <span class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Remote,
+                                    Indonesia</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Managed end-to-end data pipelines including ETL processes, data warehousing, and
+                                automation to optimize data flow and integration.</li>
+                            <li>Developed interactive dashboards and reports using Tableau, transforming raw data into
+                                actionable insights.</li>
+                            <li>Monitored and maintained databases, enforcing data governance, integrity, and compliance
+                                standards.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>ETL</span><span>Tableau</span><span>Data Warehousing</span><span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kalbe -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-role">Data Science Virtual Intern</h3>
+                                <p class="timeline-company">Kalbe Nutritionals × Rakamin</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug 2023 – Sep
+                                    2023</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Conducted EDA using PostgreSQL, built an interactive Tableau dashboard, and performed
+                                customer segmentation with K-Means clustering and ARIMA time series forecasting.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>PostgreSQL</span><span>Tableau</span><span>K-Means</span><span>ARIMA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="edu-section reveal">
+                <h3 class="edu-title">Education &amp; Courses</h3>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <strong>IPB University — Physics</strong>
+                            <span>Aug 2019 – Mar 2025</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <i class="fa-solid fa-award"></i>
+                        <div>
+                            <strong>DQLab — Data Analytics Scholarship Awardee</strong>
+                            <span>Apr 2023 – Jun 2023</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <div>
+                            <strong>Digitalent by Kominfo — Python for Data Science</strong>
+                            <span>Mar 2023 – Jun 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ── PROJECTS ── -->
-    <div id="projects">
+    <section id="projects" class="section projects-section">
         <div class="container">
-            <h1 class="sub-title reveal">Personal Projects</h1>
+            <div class="section-header reveal">
+                <p class="section-eyebrow">What I've Built</p>
+                <h2 class="section-heading">Personal Projects</h2>
+            </div>
             <div class="project-container">
-                <button id="prevBtn">&#10094;</button>
+                <button id="prevBtn" aria-label="Previous">&#10094;</button>
                 <div class="project-list">
-                    <div>
+                    <div class="project-card">
                         <img src="assets/tickerwatch-dashboard.png" alt="tickerwatch">
-                        <h2>TickerWatch — IDX Stock Market Dashboard</h2>
-                        <p>A self-hosted web platform for Indonesian stock market (IDX/IHSG) analysis.
-                            Features a live dashboard for 900+ tickers refreshed every 5 minutes,
-                            a strategy backtester with 14+ technical indicators, emiten detail analytics,
-                            and an automated trade journal with P&amp;L analytics.</p>
-                        <a href="https://tickerwatch.site" target="_blank"><i class="fa-solid fa-arrow-right"></i> Live
-                            Site</a>
+                        <h2>TickerWatch — IDX Stock Dashboard</h2>
+                        <p>Self-hosted platform for Indonesian stock market (IDX/IHSG) analysis. Live dashboard for 900+
+                            tickers refreshed every 5 mins, 14+ indicator backtester, and automated trade journal with
+                            P&amp;L analytics.</p>
+                        <a href="https://tickerwatch.site" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/AWS-infra.jpeg" alt="aws">
                         <h2>AWS Data Pipeline</h2>
-                        <p>Showcases an ETL pipeline using Apache Airflow and AWS services (S3, Glue, Athena) to process
-                            employee data.
-                            The pipeline generates fake employee records, uploads them to S3, runs an ETL job via Glue,
-                            and queries the transformed data using Athena.</p>
+                        <p>ETL pipeline using Apache Airflow and AWS services (S3, Glue, Athena) to process employee
+                            data — demonstrates end-to-end cloud data orchestration.</p>
                         <a href="https://github.com/boyerlindquist/AWS-ETL-pipeline" target="_blank"><i
-                                class="fa-solid fa-arrow-right"></i> Full Project</a>
+                                class="fa-brands fa-github"></i> GitHub</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/webserver-etl.png" alt="webserver">
                         <h2>ETL to PostgreSQL with Airflow</h2>
-                        <p>An ETL pipeline using Apache Airflow that processes web server log data, extracts relevant
-                            information, transforms the data, and loads it into a PostgreSQL database — demonstrating
-                            end-to-end orchestration and automation of data workflows.</p>
+                        <p>Airflow-orchestrated pipeline processing web server log data — extract, transform, load into
+                            PostgreSQL with full automation.</p>
                         <a href="https://github.com/boyerlindquist/webserver-log-pipeline" target="_blank"><i
-                                class="fa-solid fa-arrow-right"></i> Full Project</a>
+                                class="fa-brands fa-github"></i> GitHub</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/shell-dag.png" alt="shell-dag">
-                        <h2>ETL with Shell Scripting and Apache Airflow</h2>
-                        <p>An ETL pipeline built using Airflow and shell scripting to process toll data from various
-                            file formats.
-                            The pipeline extracts data from multiple sources, consolidates it into a single structured
-                            file,
-                            and transforms the data for uniformity.</p>
+                        <h2>ETL with Shell &amp; Airflow</h2>
+                        <p>Multi-format toll data ETL using Airflow DAGs and shell scripting — consolidates and
+                            transforms data from multiple file sources.</p>
                         <a href="https://github.com/boyerlindquist/ETL-toll-pipeline" target="_blank"><i
-                                class="fa-solid fa-arrow-right"></i> Full Project</a>
+                                class="fa-brands fa-github"></i> GitHub</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/virtual-intern.png" alt="rakamin">
-                        <h2>Data Science Final Project — Kalbe × Rakamin</h2>
-                        <p>Conducted EDA using PostgreSQL, built an interactive Tableau dashboard, and performed
-                            predictive
-                            modeling including customer segmentation with K-Means clustering and time series forecasting
-                            with ARIMA.</p>
+                        <h2>Data Science Final — Kalbe × Rakamin</h2>
+                        <p>EDA with PostgreSQL, interactive Tableau dashboard, K-Means customer segmentation, and ARIMA
+                            time series forecasting.</p>
                         <a href="https://drive.google.com/file/d/1BGQR9zy-Xo-_zyOL37CFoN_2kbOjlAHK/view?usp=sharing"
-                            target="_blank"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/ecommerce.png" alt="ecommerce">
-                        <h2>Olist E-Commerce Data Analysis</h2>
-                        <p>Analyzes Olist's e-commerce data using Python, MySQL, and Streamlit. Covers data importing,
-                            cleaning, joining, and exploratory analysis to reveal trends in customer behavior, top
-                            products,
-                            and payment preferences.</p>
+                        <h2>Olist E-Commerce Analysis</h2>
+                        <p>Python + MySQL + Streamlit analysis of Olist's e-commerce data — customer behavior, top
+                            products, and payment preference insights.</p>
                         <a href="https://drive.google.com/file/d/1ZyilELfi5l8QhGhuIfPhN3gN927JMBrR/view?usp=sharing"
-                            target="_blank"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/movie.png" alt="movie">
-                        <h2>Movie Data Analysis with Python</h2>
-                        <p>A movie data analysis project involving importing, cleaning (handling missing values,
-                            duplicates,
-                            and data types), and analyzing data. Highlights trends in movie genres, box office revenues,
-                            ratings, and audience preferences.</p>
+                        <h2>Movie Data Analysis</h2>
+                        <p>Python analysis of movie data covering genres, box office trends, ratings, and audience
+                            preferences with full cleaning pipeline.</p>
                         <a href="https://drive.google.com/file/d/1nF-F_3q84lZcDnwn2Wa_iYE00RYB3cgg/view?usp=sharing"
-                            target="_blank"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/nyambi.png" alt="nyambi">
                         <h2>NyambiDesign Dashboard</h2>
-                        <p>An analytics dashboard for Nyambi Design's August performance using Tableau. Integrates and
-                            visualizes key metrics such as revenue, user engagement, and sales performance, highlighting
-                            trends in business growth and customer behavior.</p>
+                        <p>Tableau analytics dashboard for Nyambi Design — revenue, user engagement, and sales
+                            performance metrics visualization.</p>
                         <a href="https://drive.google.com/file/d/1YjnWNvlewU5phrhWvbnxsjLWdWhAx39f/view?usp=sharing"
-                            target="_blank"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
                     </div>
-                    <div>
+                    <div class="project-card">
                         <img src="assets/crime.png" alt="crime">
                         <h2>Chicago Crime Analysis</h2>
-                        <p>A Chicago crime analysis project using Python. Involves importing, cleaning (renaming
-                            columns,
-                            handling data types, feature labeling), and analyzing data to highlight trends in crime
-                            rates,
-                            geographic hotspots, and variations across time periods.</p>
+                        <p>Python crime data analysis — trends, geographic hotspots, and time-based variations with full
+                            data cleaning pipeline.</p>
                         <a href="https://drive.google.com/file/d/1jYRDOlxXAYWWa-ZQaUVcZosgfDvFYqcG/view?usp=sharing"
-                            target="_blank"><i class="fa-solid fa-arrow-right"></i> Full Project</a>
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
                     </div>
                 </div>
-                <button id="nextBtn">&#10095;</button>
+                <button id="nextBtn" aria-label="Next">&#10095;</button>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- ── CERTIFICATES ── -->
-    <div id="certificates">
-        <div class="cert-container">
-            <h1>Certificates</h1>
-            <p>Credentials That Define My Journey</p>
-            <div class="cert-list">
-                <div class="reveal">
+    <section id="certificates" class="section cert-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">Credentials</p>
+                <h2 class="section-heading">Certificates</h2>
+            </div>
+            <div class="cert-grid reveal">
+                <div class="cert-card">
                     <img src="assets/cert (2).jpeg" alt="airflow-kafka">
-                    <h3>ETL and Data Pipelines with Shell, Airflow, and Kafka</h3>
-                    <p><a href="https://www.coursera.org/account/accomplishments/verify/SPC4ESOK3DOU" target="_blank">
-                            Credential: SPC4ESOK3DOU</a></p>
+                    <div class="cert-body">
+                        <h3>ETL and Data Pipelines with Shell, Airflow, and Kafka</h3>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/SPC4ESOK3DOU"
+                            target="_blank">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div class="reveal">
+                <div class="cert-card">
                     <img src="assets/cert (1).jpeg" alt="sql-python">
-                    <h3>Databases and SQL for Data Science with Python</h3>
-                    <p><a href="https://www.coursera.org/account/accomplishments/records/Y3TYXM8NQ3H6" target="_blank">
-                            Credential: Y3TYXM8NQ3H6</a></p>
+                    <div class="cert-body">
+                        <h3>Databases and SQL for Data Science with Python</h3>
+                        <a href="https://www.coursera.org/account/accomplishments/records/Y3TYXM8NQ3H6"
+                            target="_blank">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div class="reveal">
+                <div class="cert-card">
                     <img src="assets/cert (5).jpeg" alt="data-python">
-                    <h3>Data Analysis with Python</h3>
-                    <p><a href="https://www.coursera.org/account/accomplishments/verify/WR7BVVLXB2QV" target="_blank">
-                            Credential: WR7BVVLXB2QV</a></p>
+                    <div class="cert-body">
+                        <h3>Data Analysis with Python</h3>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/WR7BVVLXB2QV"
+                            target="_blank">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div class="reveal">
+                <div class="cert-card">
                     <img src="assets/cert (3).jpeg" alt="intro-data">
-                    <h3>Introduction to Data Analytics</h3>
-                    <p><a href="https://www.coursera.org/account/accomplishments/verify/YHWPRGJCSXAB" target="_blank">
-                            Credential: YHWPRGJCSXAB</a></p>
+                    <div class="cert-body">
+                        <h3>Introduction to Data Analytics</h3>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YHWPRGJCSXAB"
+                            target="_blank">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div class="reveal">
+                <div class="cert-card">
                     <img src="assets/cert-Tetris.png" alt="tetris">
-                    <h3>Tetris Program Batch 3: Data Analytics Scholarship Awardee</h3>
-                    <p><a href="https://academy.dqlab.id/Certificate_check/result/DQLABTSB3IOKWMG/TRACK#mycertificate"
-                            target="_blank">
-                            Credential: DQLABTSB3IOKWMG</a></p>
+                    <div class="cert-body">
+                        <h3>Tetris Program Batch 3: Data Analytics Scholarship</h3>
+                        <a href="https://academy.dqlab.id/Certificate_check/result/DQLABTSB3IOKWMG/TRACK#mycertificate"
+                            target="_blank">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div class="reveal">
+                <div class="cert-card">
                     <img src="assets/cert-TSA.png" alt="tsa">
-                    <h3>Programming with Python for Data Science</h3>
-                    <p><a href="https://drive.google.com/file/d/1uJzGb44FF-nc8IVbo7zrHLpHymybrc1_/view" target="_blank">
-                            Credential: 2005825840-22/TSA/BLSDM.Kominfo/2023</a></p>
+                    <div class="cert-body">
+                        <h3>Programming with Python for Data Science</h3>
+                        <a href="https://drive.google.com/file/d/1uJzGb44FF-nc8IVbo7zrHLpHymybrc1_/view"
+                            target="_blank">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- ── CONTACT ── -->
-    <div id="contact">
-        <div class="contact-container">
-            <div class="contact-left reveal">
-                <h2>Contact Me</h2>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>imammamqs@gmail.com</p>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-inner reveal">
+                <div class="contact-left">
+                    <p class="section-eyebrow">Get In Touch</p>
+                    <h2 class="section-heading">Let's Work<br>Together</h2>
+                    <p class="contact-desc">Open to data engineering roles, freelance projects, and collaboration
+                        opportunities.</p>
+                    <div class="contact-links">
+                        <a href="mailto:imammamq@gmail.com" class="contact-link-item">
+                            <i class="fas fa-envelope"></i><span>imammamqs@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/imamqalbuns/" target="_blank" class="contact-link-item">
+                            <i class="fa-brands fa-linkedin"></i><span>linkedin.com/in/imamqalbuns</span>
+                        </a>
+                        <a href="https://github.com/boyerlindquist" target="_blank" class="contact-link-item">
+                            <i class="fa-brands fa-github"></i><span>github.com/boyerlindquist</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <p>linkedin.com/in/imamqalbuns</p>
+                <div class="contact-right">
+                    <form action="mailto:imammamq@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
-                <div class="contact-item">
-                    <i class="fa-brands fa-github"></i>
-                    <p>github.com/boyerlindquist</p>
-                </div>
-            </div>
-            <div class="contact-right reveal">
-                <form action="mailto:imammamq@gmail.com" method="POST" enctype="text/plain">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- ── JAVASCRIPT ── -->
     <script>
-        /* ── Tab switcher ── */
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (var tl of tablinks) tl.classList.remove("active-link");
-            for (var tc of tabcontents) tc.classList.remove("active-tab");
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+        /* ── Hamburger ── */
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
         }
 
-        /* ── Project carousel ── */
-        document.addEventListener("DOMContentLoaded", function () {
-            const projectList = document.querySelector(".project-list");
-            const prevBtn = document.getElementById("prevBtn");
-            const nextBtn = document.getElementById("nextBtn");
-            const scrollAmount = 480;
-            const scrollSpeed = 18;
+        /* ── Cursor blink ── */
+        setInterval(() => {
+            const c = document.querySelector(".cursor-blink");
+            if (c) c.style.opacity = c.style.opacity === "0" ? "1" : "0";
+        }, 530);
 
-            function smoothScroll(distance) {
-                let step = distance / scrollSpeed;
-                let count = 0;
-                const slide = setInterval(() => {
-                    projectList.scrollBy({ left: step, behavior: "instant" });
-                    count++;
-                    if (count >= scrollSpeed) clearInterval(slide);
-                }, 10);
-            }
-
-            nextBtn.addEventListener("click", () => smoothScroll(scrollAmount));
-            prevBtn.addEventListener("click", () => smoothScroll(-scrollAmount));
+        document.addEventListener("DOMContentLoaded", () => {
 
             /* ── Scroll Reveal ── */
             const reveals = document.querySelectorAll(".reveal");
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                        observer.unobserve(entry.target);
+            const revealObs = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { e.target.classList.add("visible"); revealObs.unobserve(e.target); }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(el => revealObs.observe(el));
+
+            /* ── Project carousel ── */
+            const list = document.querySelector(".project-list");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+
+            function smoothScroll(dist) {
+                const step = dist / 18, iv = setInterval(() => {
+                    list.scrollBy({ left: step, behavior: "instant" });
+                }, 10);
+                setTimeout(() => clearInterval(iv), 180);
+            }
+            nextBtn.addEventListener("click", () => smoothScroll(460));
+            prevBtn.addEventListener("click", () => smoothScroll(-460));
+
+            /* ── Active nav highlight on scroll ── */
+            const sections = document.querySelectorAll("section[id]");
+            const navLinks = document.querySelectorAll(".nav-links li a");
+            const scrollSpy = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        navLinks.forEach(a => a.classList.remove("active-nav"));
+                        const link = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+                        if (link) link.classList.add("active-nav");
                     }
                 });
-            }, { threshold: 0.12 });
+            }, { threshold: 0.4 });
+            sections.forEach(s => scrollSpy.observe(s));
 
-            reveals.forEach(el => observer.observe(el));
-
-            /* ── Geometric tech background ── */
+            /* ── Geometric background canvas ── */
             const canvas = document.getElementById("bg-canvas");
             const ctx = canvas.getContext("2d");
-            const ACC = '#9bda0b';
 
-            function resize() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-            }
+            function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
             resize();
             window.addEventListener("resize", () => { resize(); initShapes(); });
 
@@ -437,232 +546,62 @@
             function initShapes() {
                 shapes = [];
                 const W = canvas.width, H = canvas.height;
-
-                // Hexagons
-                for (let i = 0; i < 7; i++) {
-                    shapes.push({
-                        type: 'hex',
-                        x: Math.random() * W,
-                        y: Math.random() * H,
-                        r: Math.random() * 55 + 22,
-                        angle: Math.random() * Math.PI,
-                        dAngle: (Math.random() - 0.5) * 0.004,
-                        dx: (Math.random() - 0.5) * 0.18,
-                        dy: (Math.random() - 0.5) * 0.18,
-                        o: Math.random() * 0.09 + 0.13,
-                        filled: Math.random() > 0.6,
-                    });
-                }
-
-                // Triangles
-                for (let i = 0; i < 5; i++) {
-                    shapes.push({
-                        type: 'tri',
-                        x: Math.random() * W,
-                        y: Math.random() * H,
-                        r: Math.random() * 40 + 16,
-                        angle: Math.random() * Math.PI * 2,
-                        dAngle: (Math.random() - 0.5) * 0.006,
-                        dx: (Math.random() - 0.5) * 0.2,
-                        dy: (Math.random() - 0.5) * 0.2,
-                        o: Math.random() * 0.06 + 0.03,
-                    });
-                }
-
-                // Floating squares / diamonds
-                for (let i = 0; i < 5; i++) {
-                    shapes.push({
-                        type: 'rect',
-                        x: Math.random() * W,
-                        y: Math.random() * H,
-                        r: Math.random() * 28 + 12,
-                        angle: Math.random() * Math.PI,
-                        dAngle: (Math.random() - 0.5) * 0.005,
-                        dx: (Math.random() - 0.5) * 0.18,
-                        dy: (Math.random() - 0.5) * 0.18,
-                        o: Math.random() * 0.06 + 0.03,
-                    });
-                }
-
-                // Crosshair / plus markers
-                for (let i = 0; i < 6; i++) {
-                    shapes.push({
-                        type: 'cross',
-                        x: Math.random() * W,
-                        y: Math.random() * H,
-                        r: Math.random() * 14 + 7,
-                        angle: 0,
-                        dAngle: 0,
-                        dx: (Math.random() - 0.5) * 0.22,
-                        dy: (Math.random() - 0.5) * 0.22,
-                        o: Math.random() * 0.10 + 0.18,
-                    });
-                }
-
-                // Circuit dots
-                for (let i = 0; i < 10; i++) {
-                    shapes.push({
-                        type: 'dot',
-                        x: Math.random() * W,
-                        y: Math.random() * H,
-                        r: Math.random() * 1.8 + 0.8,
-                        angle: 0, dAngle: 0,
-                        dx: (Math.random() - 0.5) * 0.15,
-                        dy: (Math.random() - 0.5) * 0.15,
-                        o: Math.random() * 0.12 + 0.16,
-                    });
-                }
+                for (let i = 0; i < 7; i++) shapes.push({ type: 'hex', x: Math.random() * W, y: Math.random() * H, r: Math.random() * 55 + 22, angle: Math.random() * Math.PI, dAngle: (Math.random() - 0.5) * 0.004, dx: (Math.random() - 0.5) * 0.18, dy: (Math.random() - 0.5) * 0.18, o: Math.random() * 0.09 + 0.13, filled: Math.random() > 0.6 });
+                for (let i = 0; i < 5; i++) shapes.push({ type: 'tri', x: Math.random() * W, y: Math.random() * H, r: Math.random() * 40 + 16, angle: Math.random() * Math.PI * 2, dAngle: (Math.random() - 0.5) * 0.006, dx: (Math.random() - 0.5) * 0.2, dy: (Math.random() - 0.5) * 0.2, o: Math.random() * 0.06 + 0.10 });
+                for (let i = 0; i < 5; i++) shapes.push({ type: 'rect', x: Math.random() * W, y: Math.random() * H, r: Math.random() * 28 + 12, angle: Math.random() * Math.PI, dAngle: (Math.random() - 0.5) * 0.005, dx: (Math.random() - 0.5) * 0.18, dy: (Math.random() - 0.5) * 0.18, o: Math.random() * 0.06 + 0.10 });
+                for (let i = 0; i < 6; i++) shapes.push({ type: 'cross', x: Math.random() * W, y: Math.random() * H, r: Math.random() * 14 + 7, angle: 0, dAngle: 0, dx: (Math.random() - 0.5) * 0.22, dy: (Math.random() - 0.5) * 0.22, o: Math.random() * 0.10 + 0.18 });
+                for (let i = 0; i < 10; i++) shapes.push({ type: 'dot', x: Math.random() * W, y: Math.random() * H, r: Math.random() * 1.8 + 0.8, angle: 0, dAngle: 0, dx: (Math.random() - 0.5) * 0.15, dy: (Math.random() - 0.5) * 0.15, o: Math.random() * 0.12 + 0.16 });
             }
-
             initShapes();
 
-            function hexPath(cx, cy, r, angle) {
-                ctx.beginPath();
-                for (let i = 0; i < 6; i++) {
-                    const a = angle + (i * Math.PI) / 3;
-                    const px = cx + r * Math.cos(a);
-                    const py = cy + r * Math.sin(a);
-                    i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
-                }
-                ctx.closePath();
-            }
+            function hexPath(cx, cy, r, a) { ctx.beginPath(); for (let i = 0; i < 6; i++) { const ang = a + (i * Math.PI) / 3; i === 0 ? ctx.moveTo(cx + r * Math.cos(ang), cy + r * Math.sin(ang)) : ctx.lineTo(cx + r * Math.cos(ang), cy + r * Math.sin(ang)); } ctx.closePath(); }
+            function triPath(cx, cy, r, a) { ctx.beginPath(); for (let i = 0; i < 3; i++) { const ang = a + (i * 2 * Math.PI) / 3; i === 0 ? ctx.moveTo(cx + r * Math.cos(ang), cy + r * Math.sin(ang)) : ctx.lineTo(cx + r * Math.cos(ang), cy + r * Math.sin(ang)); } ctx.closePath(); }
+            function rectPath(cx, cy, r, a) { ctx.save(); ctx.translate(cx, cy); ctx.rotate(a); ctx.beginPath(); ctx.rect(-r / 2, -r / 2, r, r); ctx.restore(); }
 
-            function triPath(cx, cy, r, angle) {
-                ctx.beginPath();
-                for (let i = 0; i < 3; i++) {
-                    const a = angle + (i * 2 * Math.PI) / 3;
-                    const px = cx + r * Math.cos(a);
-                    const py = cy + r * Math.sin(a);
-                    i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
-                }
-                ctx.closePath();
-            }
-
-            function rectPath(cx, cy, r, angle) {
-                ctx.save();
-                ctx.translate(cx, cy);
-                ctx.rotate(angle);
-                ctx.beginPath();
-                ctx.rect(-r / 2, -r / 2, r, r);
-                ctx.restore();
-            }
-
-            let t = 0;
             function drawGeo() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
-                t += 0.008;
-
                 const W = canvas.width, H = canvas.height;
-
-
-
-                // Draw shapes
                 shapes.forEach(s => {
                     ctx.save();
                     const col = `rgba(155,218,11,${s.o})`;
-
-                    // Subtle glow
-                    ctx.shadowColor = 'rgba(155,218,11,0.4)';
-                    ctx.shadowBlur = 4;
-
+                    ctx.shadowColor = 'rgba(155,218,11,0.4)'; ctx.shadowBlur = 4;
                     if (s.type === 'hex') {
                         hexPath(s.x, s.y, s.r, s.angle);
-                        if (s.filled) {
-                            ctx.fillStyle = `rgba(155,218,11,${s.o * 0.25})`;
-                            ctx.fill();
-                        }
-                        ctx.strokeStyle = col;
-                        ctx.lineWidth = 1;
-                        ctx.stroke();
-
-                        // Inner hex ring
+                        if (s.filled) { ctx.fillStyle = `rgba(155,218,11,${s.o * 0.25})`; ctx.fill(); }
+                        ctx.strokeStyle = col; ctx.lineWidth = 1; ctx.stroke();
                         hexPath(s.x, s.y, s.r * 0.55, s.angle + 0.5);
-                        ctx.strokeStyle = `rgba(155,218,11,${s.o * 0.5})`;
-                        ctx.lineWidth = 0.6;
-                        ctx.stroke();
-
-                    } else if (s.type === 'tri') {
-                        triPath(s.x, s.y, s.r, s.angle);
-                        ctx.strokeStyle = col;
-                        ctx.lineWidth = 0.8;
-                        ctx.stroke();
-
-                    } else if (s.type === 'rect') {
-                        rectPath(s.x, s.y, s.r, s.angle);
-                        ctx.strokeStyle = col;
-                        ctx.lineWidth = 0.8;
-                        ctx.stroke();
-
-                    } else if (s.type === 'cross') {
-                        const r = s.r;
-                        ctx.strokeStyle = col;
-                        ctx.lineWidth = 1.2;
-                        // Horizontal
-                        ctx.beginPath();
-                        ctx.moveTo(s.x - r, s.y); ctx.lineTo(s.x + r, s.y); ctx.stroke();
-                        // Vertical
-                        ctx.beginPath();
-                        ctx.moveTo(s.x, s.y - r); ctx.lineTo(s.x, s.y + r); ctx.stroke();
-                        // Corner ticks
+                        ctx.strokeStyle = `rgba(155,218,11,${s.o * 0.5})`; ctx.lineWidth = 0.6; ctx.stroke();
+                    } else if (s.type === 'tri') { triPath(s.x, s.y, s.r, s.angle); ctx.strokeStyle = col; ctx.lineWidth = 0.8; ctx.stroke(); }
+                    else if (s.type === 'rect') { rectPath(s.x, s.y, s.r, s.angle); ctx.strokeStyle = col; ctx.lineWidth = 0.8; ctx.stroke(); }
+                    else if (s.type === 'cross') {
+                        const r = s.r; ctx.strokeStyle = col; ctx.lineWidth = 0.9;
+                        ctx.beginPath(); ctx.moveTo(s.x - r, s.y); ctx.lineTo(s.x + r, s.y); ctx.stroke();
+                        ctx.beginPath(); ctx.moveTo(s.x, s.y - r); ctx.lineTo(s.x, s.y + r); ctx.stroke();
                         const tk = r * 0.4;
                         [[-1, -1], [1, -1], [1, 1], [-1, 1]].forEach(([sx, sy]) => {
                             ctx.beginPath();
-                            ctx.moveTo(s.x + sx * r, s.y + sy * r);
-                            ctx.lineTo(s.x + sx * (r - tk), s.y + sy * r);
-                            ctx.moveTo(s.x + sx * r, s.y + sy * r);
-                            ctx.lineTo(s.x + sx * r, s.y + sy * (r - tk));
+                            ctx.moveTo(s.x + sx * r, s.y + sy * r); ctx.lineTo(s.x + sx * (r - tk), s.y + sy * r);
+                            ctx.moveTo(s.x + sx * r, s.y + sy * r); ctx.lineTo(s.x + sx * r, s.y + sy * (r - tk));
                             ctx.stroke();
                         });
-
-                    } else if (s.type === 'dot') {
-                        ctx.shadowBlur = 10;
-                        ctx.beginPath();
-                        ctx.arc(s.x, s.y, s.r * 1.5, 0, Math.PI * 2);
-                        ctx.fillStyle = col;
-                        ctx.fill();
-                    }
-
+                    } else if (s.type === 'dot') { ctx.shadowBlur = 10; ctx.beginPath(); ctx.arc(s.x, s.y, s.r * 1.5, 0, Math.PI * 2); ctx.fillStyle = col; ctx.fill(); }
                     ctx.restore();
-
-                    // Move
-                    s.angle += s.dAngle;
-                    s.x += s.dx;
-                    s.y += s.dy;
+                    s.angle += s.dAngle; s.x += s.dx; s.y += s.dy;
                     if (s.x < -120 || s.x > W + 120) s.dx *= -1;
                     if (s.y < -120 || s.y > H + 120) s.dy *= -1;
                 });
-
-                // Connecting lines between nearby dots/crosses
                 const anchors = shapes.filter(s => s.type === 'dot' || s.type === 'cross');
                 ctx.shadowBlur = 0;
-                for (let i = 0; i < anchors.length; i++) {
-                    for (let j = i + 1; j < anchors.length; j++) {
-                        const dx = anchors[i].x - anchors[j].x;
-                        const dy = anchors[i].y - anchors[j].y;
-                        const dist = Math.sqrt(dx * dx + dy * dy);
-                        if (dist < 180) {
-                            ctx.beginPath();
-                            ctx.strokeStyle = `rgba(155,218,11,${0.20 * (1 - dist / 180)})`;
-                            ctx.lineWidth = 0.6;
-                            ctx.moveTo(anchors[i].x, anchors[i].y);
-                            ctx.lineTo(anchors[j].x, anchors[j].y);
-                            ctx.stroke();
-                        }
-                    }
+                for (let i = 0; i < anchors.length; i++) for (let j = i + 1; j < anchors.length; j++) {
+                    const dx = anchors[i].x - anchors[j].x, dy = anchors[i].y - anchors[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 180) { ctx.beginPath(); ctx.strokeStyle = `rgba(155,218,11,${0.20 * (1 - dist / 180)})`; ctx.lineWidth = 0.6; ctx.moveTo(anchors[i].x, anchors[i].y); ctx.lineTo(anchors[j].x, anchors[j].y); ctx.stroke(); }
                 }
-
                 requestAnimationFrame(drawGeo);
             }
-
             drawGeo();
         });
-
-        /* ── Hamburger menu ── */
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
     </script>
-
 </body>
 
 </html>
