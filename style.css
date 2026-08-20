@@ -315,6 +315,23 @@ body {
     font-weight: 300;
 }
 
+.wave-hand {
+    display: inline-block;
+    animation: waveHand 2.2s ease-in-out infinite;
+    transform-origin: 70% 70%;
+    color: var(--accent);
+    font-size: 14px;
+    margin-right: 2px;
+}
+@keyframes waveHand {
+    0%, 100% { transform: rotate(0deg); }
+    15%       { transform: rotate(-18deg); }
+    30%       { transform: rotate(14deg); }
+    45%       { transform: rotate(-12deg); }
+    60%       { transform: rotate(10deg); }
+    75%       { transform: rotate(-6deg); }
+}
+
 .hero-bio {
     font-size: 16px;
     color: var(--muted);
@@ -842,6 +859,48 @@ body {
     border-color: rgba(155, 218, 11, 0.2);
     transform: translateY(-4px);
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Confidential project card image */
+.project-img-confidential {
+    position: relative;
+    width: 100%;
+    height: 195px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.project-img-confidential img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px) brightness(0.75);
+    transform: scale(1.02);
+    transition: filter var(--tr);
+}
+.project-card:hover .project-img-confidential img {
+    filter: blur(2px) brightness(0.8);
+}
+.confidential-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+.confidential-overlay i {
+    font-size: 22px;
+    color: var(--accent);
+    opacity: 0.85;
+}
+.confidential-overlay span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #aaa;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .project-card img {

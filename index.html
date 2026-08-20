@@ -47,7 +47,7 @@
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-text reveal">
-                    <p class="hero-eyebrow">👋 Hello, I'm</p>
+                    <p class="hero-eyebrow"><i class="fa-solid fa-hand wave-hand"></i> Hello, I'm</p>
                     <h1 class="hero-name">Imam Qalbun<br>Salim</h1>
                     <h2 class="hero-role">Data Engineer<span class="cursor-blink">|</span></h2>
                     <p class="hero-bio">Building robust ETL pipelines, scalable data platforms, and REST APIs that power
@@ -93,7 +93,7 @@
                     <h2 class="section-heading">Turning Raw Data<br>Into <span class="accent">Impact</span></h2>
                     <p class="about-bio">I'm a Data Engineer passionate about designing and optimizing data pipelines
                         and full-stack data platforms. I build end-to-end ETL workflows, relational data models, and
-                        REST APIs that power production dashboards — focusing on efficiency, scalability, and
+                        REST APIs that power production dashboards, focusing on efficiency, scalability, and
                         cost-effective cloud solutions.</p>
                     <p class="about-bio mt">Currently at <strong class="accent">Jet Commerce</strong>, where I've cut
                         cloud OPEX by 40%+ and built a full-stack internal dashboard that replaced Looker entirely.</p>
@@ -108,12 +108,12 @@
                         <span class="stat-label">Projects Delivered</span>
                     </div>
                     <div class="stat-card accent-card">
-                        <div class="stat-num-wrap"><span class="stat-num">40</span><span class="stat-suf">%</span></div>
-                        <span class="stat-label">Cloud OPEX Reduction</span>
+                        <div class="stat-num-wrap"><span class="stat-num">15</span><span class="stat-suf">+</span></div>
+                        <span class="stat-label">Tech Stacks Mastered</span>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-num-wrap"><span class="stat-num">40</span><span class="stat-suf">+</span></div>
-                        <span class="stat-label">Reusable SQL Queries Built</span>
+                        <div class="stat-num-wrap"><span class="stat-num">2</span><span class="stat-suf">+</span></div>
+                        <span class="stat-label">Production Systems Live</span>
                     </div>
                 </div>
             </div>
@@ -302,11 +302,25 @@
         <div class="container">
             <div class="section-header reveal">
                 <p class="section-eyebrow">What I've Built</p>
-                <h2 class="section-heading">Personal Projects</h2>
+                <h2 class="section-heading">Projects</h2>
             </div>
             <div class="project-container">
                 <button id="prevBtn" aria-label="Previous">&#10094;</button>
                 <div class="project-list">
+                    <div class="project-card">
+                        <div class="project-img-confidential">
+                            <img src="assets/jetcom-dashboard-blurred2.png" alt="Jet Commerce Dashboard">
+                            <div class="confidential-overlay">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>Data redacted for confidentiality</span>
+                            </div>
+                        </div>
+                        <h2>Internal Analytics Dashboard (Jet Commerce)</h2>
+                        <p>Full-stack data platform built to replace Looker. Powered by Django REST APIs, relational
+                            data models, and ETL pipelines pulling from PostgreSQL. Used daily across teams for
+                            cross-brand ecommerce reporting.</p>
+                        <a href="#experience"><i class="fa-solid fa-circle-info"></i> See Experience</a>
+                    </div>
                     <div class="project-card">
                         <img src="assets/tickerwatch-dashboard.png" alt="tickerwatch">
                         <h2>TickerWatch — IDX Stock Dashboard</h2>
@@ -320,14 +334,15 @@
                         <img src="assets/AWS-infra.jpeg" alt="aws">
                         <h2>AWS Data Pipeline</h2>
                         <p>ETL pipeline using Apache Airflow and AWS services (S3, Glue, Athena) to process employee
-                            data — demonstrates end-to-end cloud data orchestration.</p>
+                            data, demonstrating end-to-end cloud data orchestration.</p>
                         <a href="https://github.com/boyerlindquist/AWS-ETL-pipeline" target="_blank"><i
                                 class="fa-brands fa-github"></i> GitHub</a>
                     </div>
                     <div class="project-card">
                         <img src="assets/webserver-etl.png" alt="webserver">
                         <h2>ETL to PostgreSQL with Airflow</h2>
-                        <p>Airflow-orchestrated pipeline processing web server log data — extract, transform, load into
+                        <p>Airflow-orchestrated pipeline processing web server log data: extract, transform, and load
+                            into
                             PostgreSQL with full automation.</p>
                         <a href="https://github.com/boyerlindquist/webserver-log-pipeline" target="_blank"><i
                                 class="fa-brands fa-github"></i> GitHub</a>
@@ -335,8 +350,8 @@
                     <div class="project-card">
                         <img src="assets/shell-dag.png" alt="shell-dag">
                         <h2>ETL with Shell &amp; Airflow</h2>
-                        <p>Multi-format toll data ETL using Airflow DAGs and shell scripting — consolidates and
-                            transforms data from multiple file sources.</p>
+                        <p>Multi-format toll data ETL using Airflow DAGs and shell scripting, consolidating and
+                            transforming data from multiple file sources.</p>
                         <a href="https://github.com/boyerlindquist/ETL-toll-pipeline" target="_blank"><i
                                 class="fa-brands fa-github"></i> GitHub</a>
                     </div>
@@ -351,7 +366,7 @@
                     <div class="project-card">
                         <img src="assets/ecommerce.png" alt="ecommerce">
                         <h2>Olist E-Commerce Analysis</h2>
-                        <p>Python + MySQL + Streamlit analysis of Olist's e-commerce data — customer behavior, top
+                        <p>Python + MySQL + Streamlit analysis of Olist's e-commerce data: customer behavior, top
                             products, and payment preference insights.</p>
                         <a href="https://drive.google.com/file/d/1ZyilELfi5l8QhGhuIfPhN3gN927JMBrR/view?usp=sharing"
                             target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
@@ -367,7 +382,7 @@
                     <div class="project-card">
                         <img src="assets/nyambi.png" alt="nyambi">
                         <h2>NyambiDesign Dashboard</h2>
-                        <p>Tableau analytics dashboard for Nyambi Design — revenue, user engagement, and sales
+                        <p>Tableau analytics dashboard for Nyambi Design covering revenue, user engagement, and sales
                             performance metrics visualization.</p>
                         <a href="https://drive.google.com/file/d/1YjnWNvlewU5phrhWvbnxsjLWdWhAx39f/view?usp=sharing"
                             target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
@@ -375,7 +390,7 @@
                     <div class="project-card">
                         <img src="assets/crime.png" alt="crime">
                         <h2>Chicago Crime Analysis</h2>
-                        <p>Python crime data analysis — trends, geographic hotspots, and time-based variations with full
+                        <p>Python crime data analysis: trends, geographic hotspots, and time-based variations with full
                             data cleaning pipeline.</p>
                         <a href="https://drive.google.com/file/d/1jYRDOlxXAYWWa-ZQaUVcZosgfDvFYqcG/view?usp=sharing"
                             target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
